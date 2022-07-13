@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    
+    <body>
+        
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Food</a>
+                <div class="dropdown-content">
+                  <a href="#">Fruit and vegetables.</a>
+                  <a href="#">Starchy food.</a>
+                  <a href="#">Dairy.</a>
+                  <a href="#">Protein.</a>
+                  <a href="#">Fat.</a>
+                </div>
+              </li>
+              
+            </ul>
+          </nav>
+        <main>
+          
+            <form id="formID">
+                <label for="foodName"> Food Name </label>
+                <input type="text"name="foodName"id="foodName"/>
+
+                <label for="foodType"> Food Type </label>
+                <select name="foodType" id="foodType">
+                    <option value="Diary">Diary</option>
+                    <option value="Fat">Fat</option>
+                    <option value="Protein">Protein</option>
+                    <option value="fruitAndVegetables">Fruit and vegetables</option>
+                    <option value="starchyFood">Starchy food</option>
+                  </select>
+
+                <label for="Price"> Food Price </label>
+                <input type="text"name="Price"id="Price"/>
+                <input type="submit"value="submit"/>
+
+           </form>
+        
+    
+          </main>
+          
+    </body>
+    <div class="footer">
+        <p>© All Copy Rights Are Reserved</p>
+      </div>
+      <script src="app.js"></script>
+     
+    </html>
+
+</body>
+</html>
