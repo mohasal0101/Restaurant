@@ -55,7 +55,7 @@ function handleSubmit(event) {
     let foodType = event.target.foodType.value;
     let Price = event.target.Price.value;
     const newFood = new food(foodId(), foodName, foodType, Price).printFood();
-    saveData();
+    getData();
 
 }
 formEl.addEventListener("submit", handleSubmit);
@@ -66,11 +66,15 @@ function foodId() {
     return Math.floor(Math.random() * 10000);
 }
 
-// local storage
-function saveData() {
-    console.log("saveData function called");
-    let strifyedData = JSON.stringify(allFood);
-    localStorage.setItem("food", strifyedData);
-    
+
+// create a function that get the data from the local storage and print it to the console
+function getData() {
+    let retriveData = localStorage.getItem("food");
+    console.log(retriveData);
+    console.log(typeof retriveData);
+    let parsedData = JSON.parse(retriveData);
+    console.log(parsedData);
+    console.log(typeof parsedData);
+ 
 }
-saveData();
+getData();
